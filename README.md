@@ -116,6 +116,36 @@ npm start
 - Dr. A. Madhuri  
 
 ---
+## 🌐 Live Demo
+
+🚀 Try the application live:
+
+👉 https://canevision-ai.vercel.app/predict
+
+---
+
+## 📸 Application Screenshots
+
+### 🏠 Home Page
+![Home](https://canevision-ai.vercel.app)
+
+### 🔍 Prediction Page
+Upload a leaf image and detect disease with severity.
+
+### 🌿 Diseases Information
+View detailed disease descriptions and prevention methods.
+
+### ℹ️ About Page
+Learn about the system and its impact.
+
+### 📞 Contact Page
+User interaction and communication support.
+
+### Features in Demo:
+- Image upload interface  
+- Real-time disease classification  
+- Severity level prediction (Mild / Moderate / Severe)  
+- Instant results visualization  
 
 ## 📜 License
 For academic and research use only.
