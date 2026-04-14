@@ -1,228 +1,121 @@
-\# 🌿 Sugarcane Disease Detection \& Severity Analysis
+# 🌿 Sugarcane Disease Detection & Severity Analysis
 
-
-
-\## 📌 Overview
-
-This project presents a \*\*Multi-Model Deep Learning System\*\* for automatic detection of sugarcane leaf diseases and their severity analysis.
-
-
+## 📌 Overview
+This project presents a Multi-Model Deep Learning System for automatic detection of sugarcane leaf diseases and their severity analysis.
 
 The system integrates:
+- MobileNetV3 for disease classification
+- DeepLabV3 for pixel-level segmentation
 
-\- \*\*MobileNetV3\*\* for disease classification
+Unlike traditional methods, this system not only detects the disease but also calculates the severity based on infected leaf area.
 
-\- \*\*DeepLabV3\*\* for pixel-level segmentation
+---
 
+## 🚀 Key Features
+- Automatic disease classification  
+- Pixel-level segmentation  
+- Severity estimation (Mild / Moderate / Severe)  
+- Real-time prediction  
+- Web-based system  
 
+---
 
-Unlike traditional methods, this system not only detects the disease but also \*\*calculates the severity based on infected leaf area\*\*, helping in better agricultural decision-making.
+## 🧠 Tech Stack
 
+Frontend:
+- React.js
+- HTML, CSS, JavaScript
 
+Backend:
+- Python
+- Flask / FastAPI
 
-\---
+Machine Learning:
+- PyTorch / TensorFlow
+- MobileNetV3
+- DeepLabV3
 
+---
 
-
-\## 🚀 Key Features
-
-\- ✅ Automatic disease classification  
-
-\- ✅ Pixel-level segmentation of infected regions  
-
-\- ✅ Severity estimation (Mild / Moderate / Severe)  
-
-\- ✅ Real-time prediction capability  
-
-\- ✅ Web-based interface (Frontend + Backend integration)  
-
-
-
-\---
-
-
-
-\## 🧠 Tech Stack
-
-
-
-\### Frontend
-
-\- React.js  
-
-\- HTML  
-
-\- CSS  
-
-\- JavaScript  
-
-
-
-\### Backend
-
-\- Python  
-
-\- Flask / FastAPI  
-
-
-
-\### Machine Learning
-
-\- PyTorch / TensorFlow  
-
-\- MobileNetV3 (Classification)  
-
-\- DeepLabV3 (Segmentation)  
-
-
-
-\---
-
-
-
-\## 📂 Project Structure
-
-
-
-
+## 📂 Project Structure
 
 sugarcane-project/
-
 │
-
-├── frontend/ # React Application (UI)
-
-├── backend/ # API + ML Models
-
-├── .gitmodules # Submodule configuration
-
+├── frontend/
+├── backend/
+├── .gitmodules
 └── README.md
 
+---
 
+## ⚙️ Setup
 
-
-
-\---
-
-
-
-\## ⚙️ Installation \& Setup
-
-
-
-\### 1️⃣ Clone Repository (with submodules)
-
-
-
-```bash
-
+Clone repo:
 git clone --recurse-submodules https://github.com/loki-4445/sugarcane-project.git
-
 cd sugarcane-project
 
-2️⃣ Setup Backend
-
+Backend:
 cd backend
-
 pip install -r requirements.txt
-
 python app.py
 
-3️⃣ Setup Frontend
-
+Frontend:
 cd frontend
-
 npm install
-
 npm start
 
-🔄 System Workflow
+---
 
-User uploads a sugarcane leaf image
+## 🔄 Workflow
+1. Upload leaf image  
+2. Preprocess image  
+3. Classify using MobileNetV3  
+4. Segment using DeepLabV3  
+5. Calculate infected area  
+6. Predict severity:
+   0–25% → Mild  
+   26–50% → Moderate  
+   >50% → Severe  
+7. Show result  
 
-Image is preprocessed (resize + normalization)
+---
 
-MobileNetV3 classifies disease
+## 📊 Performance
+- ~94% Accuracy  
+- Reliable severity detection  
 
-DeepLabV3 segments infected regions
+---
 
-Infected pixels are calculated
+## 🎯 Applications
+- Smart agriculture  
+- Crop monitoring  
+- Farmer assistance  
 
-Severity is determined:
+---
 
-0–25% → Mild
+## ⚠️ Limitations
+- Depends on dataset  
+- Sensitive to image quality  
 
-26–50% → Moderate
+---
 
->50% → Severe
+## 🔮 Future Work
+- Mobile app  
+- Multi-crop support  
+- Real-time camera  
 
-Final result is displayed to the user
+---
 
-📊 Model Details
+## 👨‍💻 Authors
+- G. Lokesh  
+- G. Rani  
+- A. Mrudula  
+- G. Subhash  
 
-🔹 MobileNetV3 (Classification)
+## 👩‍🏫 Guided By
+- Dr. A. Madhuri  
 
-Lightweight CNN architecture
+---
 
-Fast and efficient
-
-Extracts features like texture, color, patterns
-
-🔹 DeepLabV3 (Segmentation)
-
-Semantic segmentation model
-
-Uses atrous convolution \& ASPP
-
-Identifies infected regions at pixel level
-
-📈 Performance
-
-✅ \~94% Classification Accuracy
-
-✅ Reliable Severity Estimation
-
-✅ Works on real-world field images
-
-🎯 Applications
-
-Smart Agriculture Systems
-
-Crop Health Monitoring
-
-Farmer Decision Support
-
-Precision Farming
-
-⚠️ Limitations
-
-Limited dataset size
-
-Performance depends on image quality
-
-Sensitive to lighting variations
-
-🔮 Future Enhancements
-
-Mobile application deployment
-
-Multi-crop disease detection
-
-Real-time camera integration
-
-Larger dataset for improved accuracy
-
-👨‍💻 Authors
-
-G. Lokesh
-
-G. Rani
-
-A. Mrudula
-
-G. Subhash
-
-👩‍🏫 Guided By
-
-Dr. A. Madhuri
-
+## 📜 License
+For academic and research use only.
