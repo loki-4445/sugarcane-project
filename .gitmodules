@@ -1,0 +1,6 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/loki-4445/sugarcane-classification-frontend
+[submodule "backend"]
+	path = backend
+	url = https://github.com/loki-4445/sugarcane-backend
